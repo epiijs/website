@@ -1,0 +1,22 @@
+{
+  "name": "@epiijs/website",
+  "version": "1.0.0",
+  "description": "The website for epiijs.",
+  "main": "build/start.js",
+  "scripts": {
+    "start": "tsc && node build/start.js"
+  },
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@epiijs/client": "file:../client",
+    "@epiijs/eslint-config": "^0.1.3",
+    "@tsconfig/node18": "^2.0.1",
+    "@types/node": "^20.2.1",
+    "eslint": "^8.41.0"
+  },
+  "dependencies": {
+    "@epiijs/config": "^0.2.1",
+    "@epiijs/server": "file:../server"
+  }
+}
