@@ -4,7 +4,10 @@
   "description": "The website for epiijs.",
   "main": "build/start.js",
   "scripts": {
-    "start": "tsc && node build/start.js"
+    "build-script": "tsc --project tsconfig.script.json",
+    "start-server": "tsc --project tsconfig.server.json && node build/script/start-server.js",
+    "start-client": "tsc --project tsconfig.client.json && node build/script/start-client.js",
+    "start": "npm run build-script && npm run start-server && npm run start-client"
   },
   "author": "",
   "license": "MIT",
@@ -13,6 +16,8 @@
     "@epiijs/eslint-config": "^0.1.3",
     "@tsconfig/node18": "^2.0.1",
     "@types/node": "^20.2.1",
+    "@types/react": "^18.2.41",
+    "@types/react-dom": "^18.2.17",
     "eslint": "^8.41.0"
   },
   "dependencies": {
