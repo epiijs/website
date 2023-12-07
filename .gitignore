@@ -1,4 +1,5 @@
 # Custom
+.epiijs/
 build/
 package-lock.json
 .vscode
