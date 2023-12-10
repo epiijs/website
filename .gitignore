@@ -1,5 +1,6 @@
 # Custom
 .epiijs/
+script/*.js
 build/
 package-lock.json
 .vscode

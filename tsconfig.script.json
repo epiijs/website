@@ -2,11 +2,10 @@
   "extends": "@tsconfig/node18/tsconfig.json",
   "compilerOptions": {
     "preserveConstEnums": true,
-    "outDir": "build/script",
     "declaration": false,
     "esModuleInterop": true,
     "moduleResolution": "Node16"
   },
-  "include": ["src/script/**/*"],
+  "include": ["script/**/*"],
   "exclude": ["node_modules"]
 }

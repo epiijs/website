@@ -5,9 +5,12 @@
   "main": "build/start.js",
   "scripts": {
     "build-script": "tsc --project tsconfig.script.json",
-    "start-server": "tsc --project tsconfig.server.json && node build/script/start-server.js",
-    "start-client": "tsc --project tsconfig.client.json && node build/script/start-client.js",
-    "start": "npm run build-script && npm run start-server && npm run start-client"
+    "start-server": "tsc --project tsconfig.server.json && node script/start-server.js",
+    "build-server": "tsc --project tsconfig.server.json",
+    "start-client": "node script/start-client.js",
+    "build-client": "tsc --project tsconfig.client.json && node script/build-client.js",
+    "start": "npm run build-script && npm run start-server && npm run start-client",
+    "build": "npm run build-script && npm run build-server && npm run build-client"
   },
   "author": "",
   "license": "MIT",
